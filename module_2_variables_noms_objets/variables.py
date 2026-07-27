@@ -6,6 +6,7 @@ b.append(4)
 print(a)
 print(id(a), id(b))
 
+"""Second exercice"""
 a = 1
 print(id(a))
 b = a 
