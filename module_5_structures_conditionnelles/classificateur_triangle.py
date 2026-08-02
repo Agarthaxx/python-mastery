@@ -1,4 +1,4 @@
-"""a = 10
+a = 10
 
 b = 20 
 
@@ -10,7 +10,7 @@ elif a == b or b == c or a == c:
     print("Le triangle est isocèle")
 else:
     print("Le triangle est un scalène")
-"""
+
 resultat_1 = 0 if True else "erreur"
 resultat_2 = True and 0 or "erreur"
 
