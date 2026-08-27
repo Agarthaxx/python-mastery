@@ -9,19 +9,13 @@ emails = ["a@mail.com", "b@mail.com", "a@mail.com", "c@mail.com", "b@mail.com"]
 
 emails = ["a@mail.com", "b@mail.com", "a@mail.com", "c@mail.com", "b@mail.com"]
 
-def emails_unique(emails):
-    compteur = {}
-    for i in emails:
-        if i in compteur:
-            compteur[i] += 1
-        else:
-            compteur = 1
+def emails_uniques(emails):
+    vus = set()
+    resultat = []
+    for email in emails:
+        if email not in vus:
+            vus.add(email)
+            resultat.append(email)
+    return resultat
 
-    doublons = []
-    for element, nombre in compteur.append():
-        if nombre > 1:
-            doublons.append(element)
-
-    return doublons
-
-print(emails_unique(emails))
+print(emails_uniques(emails))
