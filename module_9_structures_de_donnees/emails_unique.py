@@ -1,0 +1,27 @@
+"""
+Exercice 3:
+Tu recois une liste d'emails de clients ayant rempl un formulaire plusieurs fois par erreur :
+emails = ["a@mail.com", "b@mail.com", "a@mail.com", "c@mail.com", "b@mail.com"]
+
+Écris une fonction emails_uniques(emails) qui retourne la liste des emails sans doublons, en préservant l'ordre d'apparition
+(donc pas juste list(set(emails)), qui casserait l'ordre). Utilise un set pour suivre ce qui a déjà été vu, en O(n).
+"""
+
+emails = ["a@mail.com", "b@mail.com", "a@mail.com", "c@mail.com", "b@mail.com"]
+
+def emails_unique(emails):
+    compteur = {}
+    for i in emails:
+        if i in compteur:
+            compteur[i] += 1
+        else:
+            compteur = 1
+
+    doublons = []
+    for element, nombre in compteur.append():
+        if nombre > 1:
+            doublons.append(element)
+
+    return doublons
+
+print(emails_unique(emails))
