@@ -9,7 +9,7 @@ emails = ["a@mail.com", "b@mail.com", "a@mail.com", "c@mail.com", "b@mail.com"]
 
 emails = ["a@mail.com", "b@mail.com", "a@mail.com", "c@mail.com", "b@mail.com"]
 
-def emails_uniques(emails):
+def emails_unique(emails):
     vus = set()
     resultat = []
     for email in emails:
@@ -18,4 +18,4 @@ def emails_uniques(emails):
             resultat.append(email)
     return resultat
 
-print(emails_uniques(emails))
+print(emails_unique(emails))
